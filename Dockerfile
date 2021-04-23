@@ -2,7 +2,7 @@
 FROM alpine
 
 # RUN
-RUN apk add nginx; \
+RUN apk add nginx curl; \
     mkdir /run/nginx/; \
     echo "<h1>Hello world!</h1>" > /var/www/localhost/htdocs/index.html;
 
